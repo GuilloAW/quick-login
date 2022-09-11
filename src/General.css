@@ -35,7 +35,19 @@ body,html{
   background-color: var(--white-Semi);
 }
 /*clases base*/
+.tex-t-c{
+  text-transform: capitalize;
+}
+.cur-p{
+  cursor: pointer;
+}
 /*aling*/
+.ali-i-c{
+  align-items: center;
+}
+.jus-c-c{
+  justify-content: center;
+}
 .jus-c-sb{
   justify-content: space-between;
 }
@@ -70,8 +82,11 @@ body,html{
 .wid-90{
   width: 90%;
 }
+.wid-95{
+  width: 95%;
+}
 .wid-80{
-  width: 80%;
+  width: 82%;
 }
 .wid-70{
   width: 70%;
@@ -166,6 +181,9 @@ column-gap: 9px;
 .boxContentAlto{
   min-height: 55vh;
 }
+.boxContentAlto-70{
+  min-height: 70vh;
+}
 .inptLogin{
 height: 36px;
 background: #FFFFFF;
@@ -185,7 +203,7 @@ font-size: 16px;
 @media only screen and (min-width: 866px) {
   .categoriasGrid{
     display: grid;
-    grid-template-columns: 25% 25% 25%;
+    grid-template-columns: 30% 30% 30%;
     justify-content: space-evenly;
     column-gap: 4vw;
     row-gap: 8vh;

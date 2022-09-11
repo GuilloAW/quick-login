@@ -15,7 +15,7 @@ function ModalBox(props) {
     <>
     <div className="modalFondo">
       <div className="modalTexto">
-        <button className="flo-r" onClick={()=>{props.cerrarModal(false)}}>Cerrar</button>
+        <button className="flo-r btn" onClick={()=>{props.cerrarModal(false)}}><span class="col-bd material-symbols-outlined">cancel</span></button>
         <div id="modalTexto">
           {props.textoModal}
         </div>

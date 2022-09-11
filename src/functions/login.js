@@ -9,7 +9,7 @@ export default function inicioSesion(props) {
     }
     if(props.email==="cordi123" && props.pass==="cordi123"){
       props.loginEnter(false)
-      props.rol("coordinadora");
+      props.rol("coordinador");
     }
   }
 }

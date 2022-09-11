@@ -5,6 +5,7 @@ export const Header = (props) => {
   const BarTop= styled.div`
   display:flex;
   justify-content: space-between;
+  align-items: center;
 `;
 const NubeMenu = styled.div`
 position:absolute;
@@ -15,6 +16,7 @@ padding:11px;
 z-index:1;
 background-color:#F2F2F2;
 display:none;
+margin-left:-80px
 `;
   function cerrar() {
   props.loginEnter(true)
@@ -33,15 +35,15 @@ display:none;
       <div className="boxContent">
         <BarTop>
             <div><img src={logoMain} alt="" className="wid-41p"/></div>
+            <div className="col-w tex-t-c">{props.rol}</div>
             <div>
               <div>{props.nombre}</div>
-              <div className="dis-f">
+              <div className="dis-f ali-i-c">
                 <div><span className="fon-s-2e col-w material-symbols-outlined">account_circle</span></div>
-                <div onClick={openNube}><span className="col-w material-symbols-outlined">arrow_drop_down</span></div>
+                <div onClick={openNube}><span className="cur-p col-w material-symbols-outlined">arrow_drop_down</span></div>
               </div>
               <NubeMenu id="menuNube">
-                <div>{props.rol}</div>
-                <div><div onClick={cerrar}>Cerrar Sesion</div></div>
+                <div><div className="cur-p" onClick={cerrar}>Cerrar Sesion</div></div>
               </NubeMenu>
             </div>
         </BarTop>

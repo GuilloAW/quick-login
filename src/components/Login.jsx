@@ -29,7 +29,7 @@ export const Login = (props) => {
   color: #4A6077;
   text-align-center;
   border:hidden;
-  width:100%;
+  width:95%;
   padding:13px 0px;
   cursor:pointer`;
   const BtnPass= styled.div`
@@ -53,7 +53,7 @@ export const Login = (props) => {
       }
       if(email==="cordi123" && pass==="cordipass"){
         props.loginEnter(false)
-        props.rol("coordinadora");
+        props.rol("coordinador");
       }
     }
   }
@@ -89,7 +89,8 @@ export const Login = (props) => {
               <input className="inptLogin wid-80 " type="password" id="passVal" placeholder="Contraseña" autoComplete="off" onChange={ (e)=>setPass(e.target.value) }  required/>
               <BtnPass onClick={verPass}><span className="material-symbols-outlined">visibility</span></BtnPass>
             </div>
-            <div className="mar-t-24p col-bd">
+            <div className="dis-f mar-t-24p jus-c-sb wid-95">
+            <div className="col-bd">
                 <input type="checkbox" id="remind"/>
                 <label htmlFor="remind">
                 Recuerdame
@@ -97,6 +98,7 @@ export const Login = (props) => {
             </div>
             <div className="tex-a-r col-bd">
               ¿Olvidaste tú contraseña?
+            </div>
             </div>
             <div className="mar-t-24p">
               <CtaLogin type="submit" value="Ingresa" onClick={inicioSesion}></CtaLogin>
