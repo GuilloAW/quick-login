@@ -71,16 +71,18 @@ export const Login = (props) => {
     <>
       <div id="loginQuick">
         <BarTop>
+          <div className="boxContent-50">
           <div className="tex-a-c">
-          <img src={logoMain} alt="" className="mar-y-8h"/>
+            <img src={logoMain} alt="" className="mar-y-8h"/>
           </div>
           <H2Login className="tex-a-c">Bienvenido</H2Login>
           <p className="tex-a-c col-w wid-90 mar-a lin-h-21p">
           Ingresa como administrador con el <b>admin123</b> y la contraseña <b>adminpass</b>, para ingresar como coordinador el usuario es <b>cordi123</b> y la contraseña <b>cordipass</b>
           <br /><span className="fon-s-0d8">(Este es un texto de ejemplo)</span>
           </p>
+          </div>
         </BarTop>
-      <div className="wid-90w mar-a">
+      <div className="boxContent-50">
         <form onSubmit={controlSubmit}>
             <input className="inptLogin wid-90 mar-t-24p" type="text" id="emailVal" placeholder="Correo electrónico" onChange={ (e)=>setEmail(e.target.value) }  required/>
             <div className="dis-f gap-col mar-t-24p">
@@ -93,7 +95,7 @@ export const Login = (props) => {
                 Recuerdame
               </label>
             </div>
-            <div className="tex-a-r mar-t-24p col-bd">
+            <div className="tex-a-r col-bd">
               ¿Olvidaste tú contraseña?
             </div>
             <div className="mar-t-24p">

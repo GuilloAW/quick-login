@@ -139,6 +139,10 @@ column-gap: 9px;
   border-bottom: 1px solid var(--yellow);
 }
 /*clases*/
+.boxContent-50{
+  width: 90vw;
+  margin: auto;
+}
 .btn{
   background-color: transparent;
   border: hidden;
@@ -154,6 +158,7 @@ column-gap: 9px;
   justify-content: center;
   padding-top: 10%;
 }
+
 .boxContent{
   width: 80vw;
   margin: auto;
@@ -184,5 +189,9 @@ font-size: 16px;
     justify-content: space-evenly;
     column-gap: 4vw;
     row-gap: 8vh;
+  }
+  .boxContent-50{
+    width: 50vw;
+    margin: auto;
   }
 }
