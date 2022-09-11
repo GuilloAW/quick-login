@@ -1,8 +1,7 @@
 import React from 'react'
-import DataTable from "react-data-table-component";
-import "styled-components";
+import DataTable, { createTheme } from 'react-data-table-component';
 
-export const Desportistas = (props) => {
+export const Deportistas = (props) => {
   const columns=[
     {
       name:"Atleta",
@@ -54,9 +53,36 @@ export const Desportistas = (props) => {
       selector:row=> row.total
     }
   ];
+
+
+// createTheme creates a new theme named solarized that overrides the build in dark theme
+createTheme('custom', {
+  text: {
+    primary: "var(--blue-ligth)",
+    secondary: "var(--white)",
+  },
+  background: {
+    default: "var(--blue-dark)",
+  },
+  context: {
+    background: 'var(--blue-ligth)',
+    text: 'var(--blue-ligth)',
+  },
+  divider: {
+    default: 'var(--blue-ligth)',
+  },
+  action: {
+    button: 'var(--blue-ligth)',
+    hover: 'var(--blue-ligth)',
+    disabled: 'var(--blue-ligth)',
+  },
+}, 'dark');
   return (
     <>
-    <DataTable data={props.atletas} columns={columns} pagination/>
+    <div className="boxContent">
+      <h2 className="col-w">Deportistas</h2>
+      <DataTable data={props.atletas} columns={columns} pagination theme="custom"/>
+    </div>
     </>
   )
 }

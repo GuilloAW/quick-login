@@ -3,7 +3,6 @@ import { useState } from 'react';
 import {Login} from './Login'
 import {Users} from './Users'
 import {Footer} from './Footer'
-
 export const Inicio = (props) => {
 const [loginEnter,stateLoginEnter] = useState(true);
 const [rol,stateRol] = useState(true);

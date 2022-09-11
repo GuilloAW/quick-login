@@ -29,17 +29,35 @@ export const Categorias = (props) => {
     }
   return (
     <>
-    <div>
     {modal && <ModalBox cerrarModal={setModal} textoModal={texto}/>}
-      <div>
-        <div>Oro</div><div>Total :{totalGold}</div><div><button onClick={() => {textoModal("medallaOro")}}>Ver</button></div>
-        </div>
-      <div>
-        <div>Plata</div><div>Total :{totalSilver}</div><div><button onClick={() => {textoModal("medallaPlata")}}>Ver</button></div>
-        </div>
-      <div>
-        <div>Bronze</div><div>Total :{totalBronze}</div><div><button onClick={() => {textoModal("medallaBronce")}}>Ver</button></div>
-        </div>
+    <div className="boxContent ">
+      <h2 className="col-w">Categorías</h2>
+      <div className=" categoriasGrid boxContentAlto">
+        <div className="tex-a-c">
+          <div>
+          <span className="fon-s-3e col-gold material-symbols-outlined">workspace_premium</span>
+            </div><div className="fon-s-3e col-y fon-w-700 bor-b-y">{totalGold}</div>
+            <div className="col-w">Medallas de Oro<button className="btn" onClick={() => {textoModal("medallaOro")}}>
+            <span className="fon-s-2e col-w material-symbols-outlined">history_edu</span>
+              </button></div>
+          </div>
+        <div className="tex-a-c">
+          <div>
+            <span className="fon-s-3e col-silver material-symbols-outlined">workspace_premium</span>
+            </div><div className=" fon-s-3e col-y fon-w-700 bor-b-y">{totalSilver}</div>
+            <div className="col-w">Medallas de Plata<button className="btn" onClick={() => {textoModal("medallaPlata")}}>
+              <span className="fon-s-2e col-w material-symbols-outlined">history_edu</span>
+              </button></div>
+          </div>
+        <div className="tex-a-c">
+          <div>
+            <span className="fon-s-3e col-bronze material-symbols-outlined">workspace_premium</span>
+            </div><div className="fon-s-3e col-y fon-w-700 bor-b-y">{totalBronze}</div>
+            <div className="col-w">Medallas de Bronce<button className="btn" onClick={() => {textoModal("medallaBronce")}}>
+              <span className="fon-s-2e col-w material-symbols-outlined">history_edu</span>
+              </button></div>
+          </div>
+      </div>
     </div>
     </>
   )

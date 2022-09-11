@@ -10,7 +10,23 @@
   --white: #fff;
   --blue-dark:#2F4256;
   --white-Semi:#F2F2F2;
+  --blue-ligth:#00FFFF;
+  --yellow:#FFE11B;
+  --gold:#F2E069;
+  --silver:#BBBBBB;
+  --bronze:#FFDFAE;
 }
+* {
+  scrollbar-color: var(--white);
+}
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--white);
+  border-radius: 20px;
+}
+
 body,html{
   margin: 0px;
   padding: 0px;
@@ -20,6 +36,15 @@ body,html{
 }
 /*clases base*/
 /*aling*/
+.jus-c-sb{
+  justify-content: space-between;
+}
+.jus-c-sa{
+  justify-content: space-around;
+}
+.jus-c-se{
+  justify-content: space-evenly;
+}
 .tex-a-c{
   text-align: center;
 }
@@ -27,6 +52,12 @@ body,html{
   text-align: right;
 }
 /*sizes*/
+.fon-s-3e{
+  font-size: 3em;
+}
+.wid-41p{
+  width: 41px;
+}
 .wid-80w{
   width: 80vw;
 }
@@ -47,6 +78,9 @@ body,html{
 }
 .fon-s-0d8{
   font-size: 0.8em;
+}
+.fon-s-2e{
+  font-size: 2em;
 }
 .dis-b{
 display: block;
@@ -74,6 +108,18 @@ column-gap: 9px;
   margin: auto;
 }
 /*color*/
+.col-y{
+  color: var(--yellow);
+}
+.col-gold{
+  color: var(--gold);
+}
+.col-silver{
+  color: var(--silver);
+}
+.col-bronze{
+  color: var(--bronze);
+}
 .col-w{
   color: var(--white);
 }
@@ -86,7 +132,35 @@ column-gap: 9px;
 .pad{
   padding: 1em;
 }
+.fon-w-700{
+  font-weight: bold;
+}
+.bor-b-y{
+  border-bottom: 1px solid var(--yellow);
+}
 /*clases*/
+.btn{
+  background-color: transparent;
+  border: hidden;
+  cursor: pointer;
+}
+.pad-y-21p{
+  padding: 21px 0px;
+}
+.categoriasGrid{
+  display: grid;
+  grid-template-columns: 55%;
+  row-gap: 8vh;
+  justify-content: center;
+  padding-top: 10%;
+}
+.boxContent{
+  width: 80vw;
+  margin: auto;
+}
+.boxContentAlto{
+  min-height: 55vh;
+}
 .inptLogin{
 height: 36px;
 background: #FFFFFF;
@@ -99,4 +173,16 @@ font-size: 16px;
 }
 .bac-c-w{
   background-color: var(--white);
+}
+.bac-c-bd{
+  background-color: var(--blue-dark);
+}
+@media only screen and (min-width: 866px) {
+  .categoriasGrid{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: space-evenly;
+    column-gap: 4vw;
+    row-gap: 8vh;
+  }
 }
