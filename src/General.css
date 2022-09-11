@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "LemonMilk";
+  src: url("https://assets.quick.com.co/fonts/bebas/BebasNeue-Regular.otf");
+}
+@font-face {
+  src: url('http://fonts.cdnfonts.com/css/segoe-pro?styles=21332,21326');
+  font-family: 'Segoe', sans-serif;
+}
+:root {
+  --white: #fff;
+  --blue-dark:#2F4256;
+  --white-Semi:#F2F2F2;
+}
+body,html{
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.1em;
+  font-family: 'Segoe', sans-serif;
+  background-color: var(--white-Semi);
+}
+/*clases base*/
+/*aling*/
+.tex-a-c{
+  text-align: center;
+}
+.tex-a-r{
+  text-align: right;
+}
+/*sizes*/
+.wid-80w{
+  width: 80vw;
+}
+.wid-90w{
+  width: 90vw;
+}
+.wid-100{
+  width: 100%;
+}
+.wid-90{
+  width: 90%;
+}
+.wid-80{
+  width: 80%;
+}
+.wid-70{
+  width: 70%;
+}
+.fon-s-0d8{
+  font-size: 0.8em;
+}
+.dis-b{
+display: block;
+}
+.dis-n{
+  display: none;
+}
+.flo-r{
+  float: right;
+}
+/*margenes*/
+.mar-y-8h{
+  margin: 8vh 0px;
+}
+.mar-t-24p{
+  margin-top:24px;
+}
+.dis-f {
+  display:flex;
+}
+.gap-col{
+column-gap: 9px;
+}
+.mar-a{
+  margin: auto;
+}
+/*color*/
+.col-w{
+  color: var(--white);
+}
+.col-bd{
+  color: var(--blue-dark);
+}
+.lin-h-21p{
+  line-height: 25px;
+}
+.pad{
+  padding: 1em;
+}
+/*clases*/
+.inptLogin{
+height: 36px;
+background: #FFFFFF;
+padding:5px 13px;
+border: 1px solid #CACACA;
+font-size: 16px;
+}
+.inputLogin::placeholder{
+  color: #AAAAAA;
+}
+.bac-c-w{
+  background-color: var(--white);
+}
