@@ -5,7 +5,7 @@ Guia de realización de la prueba login para la empresa Quick
 versión del node v14.16.1
 
 ## Pasos
-- Descargar e instalación de react app :react:
+- Descargar e instalación de react app [:react:](https://emojis.slackmojis.com/emojis/images/1643514155/1161/react.png?1643514155)
 - Crear componentes según wireframes realizados
 - Instalar la dependencia styled components :nail_care:
 - Instalar react data table compononet para el consumo de la api
