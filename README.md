@@ -7,7 +7,7 @@ versión del node v14.16.1
 ## Pasos
 - Descargar e instalación de react app
 - Crear componentes según wireframes realizados
-- Instalar la dependencia styled components
+- Instalar la dependencia styled components :nail_care:
 - Instalar react data table compononet para el consumo de la api
 - El coponente inicial es inicio
 - En inicio van dos componentes , el login y los usuarios
