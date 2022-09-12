@@ -1,10 +1,10 @@
-#Login quick
+# Login quick
 
 Guia de realización de la prueba login para la empresa Quick
 
 versión del node v14.16.1
 
-##Pasos
+## Pasos
 - Descargar e instalación de react app
 - Crear componentes según wireframes realizados
 - Instalar la dependencia styled components
