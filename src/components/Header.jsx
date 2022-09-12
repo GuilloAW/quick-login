@@ -16,7 +16,6 @@ padding:11px;
 z-index:1;
 background-color:#F2F2F2;
 display:none;
-margin-left:-80px
 `;
   function cerrar() {
   props.loginEnter(true)
@@ -37,10 +36,10 @@ margin-left:-80px
             <div><img src={logoMain} alt="" className="wid-41p"/></div>
             <div className="col-w tex-t-c">{props.rol}</div>
             <div>
-              <div>{props.nombre}</div>
-              <div className="dis-f ali-i-c">
+              <div className="dis-f ali-i-c gap-col cur-p " onClick={openNube}>
                 <div><span className="fon-s-2e col-w material-symbols-outlined">account_circle</span></div>
-                <div onClick={openNube}><span className="cur-p col-w material-symbols-outlined">arrow_drop_down</span></div>
+                <div className="col-w">{props.nombre}</div>
+                <div><span className="col-w material-symbols-outlined">arrow_drop_down</span></div>
               </div>
               <NubeMenu id="menuNube">
                 <div><div className="cur-p" onClick={cerrar}>Cerrar Sesion</div></div>

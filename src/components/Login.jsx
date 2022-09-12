@@ -48,12 +48,16 @@ export const Login = (props) => {
       alert("campos vacios")
     }else{
       if(email==="admin123" && pass==="adminpass"){
-        props.loginEnter(false)
+        props.nombre(email);
+        props.loginEnter(true)
         props.rol("administrador");
+        localStorage.setItem("loginIni", true);
       }
       if(email==="cordi123" && pass==="cordipass"){
-        props.loginEnter(false)
+        props.nombre(email);
+        props.loginEnter(true)
         props.rol("coordinador");
+        localStorage.setItem("loginIni", true);
       }
     }
   }
