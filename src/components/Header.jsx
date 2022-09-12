@@ -18,7 +18,7 @@ background-color:#F2F2F2;
 display:none;
 `;
   function cerrar() {
-  props.loginEnter(true)
+  props.loginEnter(false)
   }
   const openNube= () =>{
     const nube=document.querySelector("#menuNube");
